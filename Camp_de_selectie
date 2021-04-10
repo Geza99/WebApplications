@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Camp de selectie</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://helios.utcluj.ro/cosmin/WEB/CSS/style.css">
+
+<script>
+
+ 
+function selectie()
+{
+var select=document.createElement("select");
+//select.setAttribute("style", " width: 110px; height: 110px; float: left; margin-right:5px; margin: 40px 10px; background-color:green; color:red;  ");
+//var values=[1,2,3,4,5,6,7];
+var values=[1,8,3,4,5,6,7,10,56,84,11,74,69,55,42,41,77,93,75,20];
+select.size=7;
+select.name="valu";
+select.id="values";
+select.style="padding:5px; width: 100px; height: 300px; background-color: green; color:red; position: relative; left: 80px; font-size:35px;";
+for(const val of values)
+{
+var option=document.createElement("option");
+option.value=val;
+//option.text=val.charAt(0).toUpperCase()+val.slice();
+option.text=val;
+select.appendChild(option);
+}
+var label=document.createElement("label");
+label.innerHTML="Choose a value";
+
+label.htmlFor = "values";
+
+
+document.getElementById("container").appendChild(label).appendChild(select);  //generare dinamic
+
+}
+ var sum=0;
+function afisare()
+{
+   
+	var elem = document.getElementById("values");	
+    var e;
+	for(i=0; i<elem.options.length; i++)
+		if(elem.options[i].selected)
+		   sum+=parseInt(elem.options[i].value);
+	document.getElementById("div1").innerHTML="suma <br>"+sum;
+		if(sum>100)
+   div1.style.color="#66ff33";
+		
+}
+
+</script>
+
+
+<body  onLoad="selectie()" style="color:red; font-size:25px">
+
+Camp de selectie
+
+<br>
+<br>
+
+<br>
+<div id="div1" style="border: 2px solid green; text-align:center; height:50px; color:red"  ></div>
+<br>
+<form onClick="afisare()">
+
+<br>
+ <div id="container"   ></div>
+ </form>
+
+</body>
+</html>
