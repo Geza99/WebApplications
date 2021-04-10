@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Character statistics by jquery</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://helios.utcluj.ro/cosmin/WEB/CSS/style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
+<script>
+
+//only for that script source works
+function Statistics()
+{
+  var t1 = $("#input1").val();
+  var nr=(t1.split("f").length - 1)   //the number of 'f' characters in the first textarea
+  var tot=t1.length;  
+  $("#input2").val("total nr of characters: "+tot+" \nf appears: "+nr+" times  \npercentage: "+((nr*100)/tot).toPrecision(3)+ " %"); //percentage of f's appearance
+  
+}
+
+</script>
+<style>
+body
+{
+color: green;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Character statistics by jquery</h2>
+<hr>
+
+  <textarea id="input1" rows="5" cols="30" placeholder="textarea1" onkeyup=Statistics(); ></textarea>
+  <textarea id="input2" rows="5" cols="30" placeholder="textarea2"></textarea>
+
+</body>
+</html>
