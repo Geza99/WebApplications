@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset='uft-8'>
+    <meta  name="viewport"  content="width=device-width,  initial-scale=1">
+
+    <title>Funky div</title>
+
+    
+</head>
+
+<body onload="chg()">
+    <div id="divcol" ></div>
+</body>
+
+<style> 
+        .body 
+		{
+            width: 100%;
+            height: 100%;
+        }
+        
+        #divcol
+		{
+            height: 100px;
+            width: 100px;
+            position: relative;
+            margin: 0 auto;
+            background-color: #990000;
+        }
+</style>
+
+
+<script>
+
+function  chg()  
+{
+        document.onmousemove  =  (event)  =>  {
+                x  =  event.x;
+                y  =  event.y;
+                console.log(x  +'  '  +y);
+                document.getElementById('divcol').style.backgroundColor ='rgb('+ (Math.floor(x-y)) + ',  0,  0)';
+        };
+}
+</script>
