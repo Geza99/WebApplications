@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>file</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://helios.utcluj.ro/cosmin/WEB/CSS/style.css">
+</head>
+
+<style>
+body
+{
+	font-family: "Arial", "Times New Roman";
+	font-size: 20px;
+	background-color: rgb(92, 92, 61);
+	color:#993300;
+    
+}
+
+.secondary
+{
+	display: block;
+	padding: 15px 15px;
+    position:absolute;
+     background-color: #ffff00;
+    color: #64008D;
+    top: 330px;
+    left: 20px;
+    width: 520px;
+    text-align-last: center;
+	border: 2px solid black;
+}
+
+.clear
+{
+	clear: both;
+}
+
+
+.centerp
+ {
+	background-color: #ccccb3;
+	height: 200px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	float:center;
+    text-align:center;
+}
+
+.clear:after
+ {
+	clear: both;
+	display: block;
+	content: "";
+}
+.mainm
+{
+        background-color: #ffff00;
+        height: 80px;
+        color: #64008d;
+	    display: table-cell;
+	    vertical-align: middle;
+        line-height: 80px;
+        padding: 15px;
+         position: absolute;
+         right: 20px;
+         width: 140px;
+		 border: 2px solid black;
+		 text-align: center;
+}
+
+}
+.block
+{
+	display: block;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+    {
+        $("img").click(function()
+        {
+          
+            $("img").animate({opacity: "0.2"});
+			$("img").animate({opacity: "1"},4000);
+        });
+		
+		
+    });
+</script>
+</head>
+
+<body>    
+    <br><br>    
+	<div class="centerp">"Learning makes you free"
+	<img src="https://jw-webmagazine.com/wp-content/uploads/2019/11/Japan-Wireless-Ofi%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC-min.png" id="img1"alt="img" width="300" height="200" style="padding:60px">
+	</div>
+	</div>
+	<br> <br>
+        <div class="centerp">CENTER
+		 <div class="mainm "> </div>
+       <div class="mainm ">MAIN MENU</div>
+	
+	   </div>
+	   
+	           <div class="secondary ">SECONDARY MENU</div> 
+     <br><br>
+        <div class="centerp">FOOTER 
+		
+		 <p id="footer" style= "color: black; font-size: 20px; position:left;">  <br> <br> <br> <br> <br> <br><br>tel. number:0747353704</p>
+		 
+		</div>
+
+</div>
+
+
+</body>
+</html>
