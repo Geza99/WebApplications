@@ -1,0 +1,83 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>file</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://helios.utcluj.ro/cosmin/WEB/CSS/style.css">
+
+</head>
+<style>
+.block
+ {
+    width: 60px;
+    height: 60px;
+    border: 2px green;
+    margin: 10px;
+    background-color: red;
+    float: left;
+}
+
+
+
+</style>
+
+
+<body>
+     <span class="btn">
+      <p id="title" style="color:rgb(0, 204, 0); font-size:30px; text-align:center; font-weight:bold;">Click to animate</p>
+      </span>
+        <div class="block">            
+        </div>
+
+        <div class="block" >
+        </div>
+
+        <div class="block" >
+        </div>
+
+        <div class="block" >
+        </div>
+
+        <div class="block" >
+        </div>
+
+        <div class="block" >
+        </div>
+		<div class="block">
+        </div>
+		<div class="block">
+        </div>
+		
+		<div class="block" >
+        </div>
+		
+		<div class="block">
+        </div>
+    
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+ $(document).ready(function()
+    {
+        $("div").click(function()
+        {
+            $("div").animate({padding: "+=10px"});
+        });
+    });
+
+
+</script>
+
+
+</html>
