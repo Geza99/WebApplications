@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>HOMEWORK 5</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://helios.utcluj.ro/cosmin/WEB/CSS/style.css">
+<style>
+body
+{
+color: #00ff00;
+background-color:#595959;
+font-size: 30px;
+font-family: "Arial";
+font-weight: bold;
+}
+divstyle
+{
+color: #ff4000;
+font-family: inherit;
+font-size: 20px;
+}
+</style>
+<script>
+
+</script>
+
+</head>
+
+<body>
+
+<h2>Completeaza toate campurile</h2>
+
+<form action="https://helios.utcluj.ro/cosmin/WEB/responders/post_responder.php" target="_blank" method="POST">
+  <fieldset>
+  <divstyle>
+    <legend>FORMULAR</legend>
+
+    Nume:<br>
+    <input type="text" name="lastname" placeholder="ex. Szekely" required> 
+    <br>						
+    Prenume:<br>
+    <input type="text" name="firstname" placeholder="ex. Geza" required>
+    <br>
+    Sex:<br>
+    <input type="radio" name="sex" id="s1" value="barbat" required>barbat<br> <?-- La radio este destul de scris doar o data required -->
+    <input type="radio" name="sex" id="s2" value="femeie">femeie<br><br>
+    Data nasterii:<br>
+    <input type="date" name="data" id="data" required><br>
+    E-mail:<br>
+    <input type="email" name="my_email" id="my_email" required><br>
+    Telefon: 07XXXXXXXX<br>
+    <input type="tel" pattern="[0][7][0-9]{8}" name="t" id="t" required><br>
+
+//un for si concatenare
+
+    Cunostinte de programare:<br>
+<div class="checkbox-group required">
+    <input type="checkbox" name="limbaj1" id="limbaj1" value="c++">c++<br>
+    <input type="checkbox" name="limbaj2" id="limbaj2" value="c">c<br>
+    <input type="checkbox" name="limbaj3" id="limbaj3" value="Java">Java<br>
+    <input type="checkbox" name="limbaj4" id="limbaj4" value="Python">Python<br>
+    <input type="checkbox" name="limbaj5" id="limbaj5" value="HTML">HTML<br>
+    <input type="checkbox" name="limbaj6" id="limbaj6" value="JavaScript">JavaScript<br>
+</div>
+
+
+
+    Observatii:<br>
+    <textarea id="text_area" rows="4" cols="45" required></textarea>
+   
+ </fieldset>
+  <input type="button" value="Trimite" onClick="alert('datele nu pleaca nicaieri...')">
+  <input type="submit" value="Trimite de adevaratelea">
+   
+</form> 
+ </divstyle>
+
+</body>
+</html>
